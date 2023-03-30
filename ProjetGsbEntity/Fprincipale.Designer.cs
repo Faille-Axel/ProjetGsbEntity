@@ -42,6 +42,7 @@
             this.miseÀJourMotPasseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lb_etat = new System.Windows.Forms.Label();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
+            this.listeDesPraticiensToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,15 +93,17 @@
             // interrogerToolStripMenuItem
             // 
             this.interrogerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.listeDesFraisToolStripMenuItem});
+            this.listeDesFraisToolStripMenuItem,
+            this.listeDesPraticiensToolStripMenuItem});
             this.interrogerToolStripMenuItem.Name = "interrogerToolStripMenuItem";
             this.interrogerToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.interrogerToolStripMenuItem.Text = "Interroger";
+            this.interrogerToolStripMenuItem.Click += new System.EventHandler(this.interrogerToolStripMenuItem_Click);
             // 
             // listeDesFraisToolStripMenuItem
             // 
             this.listeDesFraisToolStripMenuItem.Name = "listeDesFraisToolStripMenuItem";
-            this.listeDesFraisToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.listeDesFraisToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listeDesFraisToolStripMenuItem.Text = "Liste des Frais";
             this.listeDesFraisToolStripMenuItem.Click += new System.EventHandler(this.listeDesFraisToolStripMenuItem_Click_1);
             // 
@@ -116,14 +119,14 @@
             // ajouterToolStripMenuItem
             // 
             this.ajouterToolStripMenuItem.Name = "ajouterToolStripMenuItem";
-            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.ajouterToolStripMenuItem.Text = "Ajouter";
             this.ajouterToolStripMenuItem.Click += new System.EventHandler(this.ajouterToolStripMenuItem_Click_1);
             // 
             // modifierToolStripMenuItem
             // 
             this.modifierToolStripMenuItem.Name = "modifierToolStripMenuItem";
-            this.modifierToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.modifierToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.modifierToolStripMenuItem.Text = "Modifier";
             // 
             // outilsToolStripMenuItem
@@ -161,6 +164,13 @@
             this.menuStrip2.TabIndex = 2;
             this.menuStrip2.Text = "menuStrip2";
             // 
+            // listeDesPraticiensToolStripMenuItem
+            // 
+            this.listeDesPraticiensToolStripMenuItem.Name = "listeDesPraticiensToolStripMenuItem";
+            this.listeDesPraticiensToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listeDesPraticiensToolStripMenuItem.Text = "Liste des praticiens";
+            this.listeDesPraticiensToolStripMenuItem.Click += new System.EventHandler(this.listeDesPraticiensToolStripMenuItem_Click);
+            // 
             // Fprincipale
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -196,6 +206,7 @@
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ToolStripMenuItem outilsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem miseÀJourMotPasseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listeDesPraticiensToolStripMenuItem;
     }
 }
 

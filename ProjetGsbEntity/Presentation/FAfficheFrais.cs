@@ -31,5 +31,6 @@ namespace ProjetGsbEntity.Presentation
         {
             dgvFrais.DataSource = mesFrais;
         }
+
     }
 }

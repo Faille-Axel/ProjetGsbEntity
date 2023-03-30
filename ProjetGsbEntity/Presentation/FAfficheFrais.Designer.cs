@@ -37,18 +37,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Broadway", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(253, 34);
+            this.label1.Font = new System.Drawing.Font("Broadway", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(295, 39);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(758, 55);
+            this.label1.Size = new System.Drawing.Size(771, 55);
             this.label1.TabIndex = 0;
             this.label1.Text = "Affichage de la liste des Frais";
             // 
             // btFermer
             // 
-            this.btFermer.Location = new System.Drawing.Point(960, 427);
+            this.btFermer.Location = new System.Drawing.Point(1120, 493);
+            this.btFermer.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btFermer.Name = "btFermer";
-            this.btFermer.Size = new System.Drawing.Size(200, 59);
+            this.btFermer.Size = new System.Drawing.Size(233, 68);
             this.btFermer.TabIndex = 1;
             this.btFermer.Text = "Fermer";
             this.btFermer.UseVisualStyleBackColor = true;
@@ -57,19 +59,21 @@
             // dgvFrais
             // 
             this.dgvFrais.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFrais.Location = new System.Drawing.Point(263, 171);
+            this.dgvFrais.Location = new System.Drawing.Point(307, 197);
+            this.dgvFrais.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dgvFrais.Name = "dgvFrais";
-            this.dgvFrais.Size = new System.Drawing.Size(807, 196);
+            this.dgvFrais.Size = new System.Drawing.Size(941, 226);
             this.dgvFrais.TabIndex = 2;
             // 
             // FAfficheFrais
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1278, 545);
+            this.ClientSize = new System.Drawing.Size(1491, 629);
             this.Controls.Add(this.dgvFrais);
             this.Controls.Add(this.btFermer);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FAfficheFrais";
             this.Text = "FAfficheFrais";
             this.Load += new System.EventHandler(this.FAfficheFrais_Load);

@@ -218,6 +218,25 @@ namespace ProjetGsbEntity
         {
             
         }
+
+        private void interrogerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listeDesPraticiensToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                List<Models.Domain.Praticien> listPraticiens = Models.Dao.ServicePraticien.getInstance().ListedesPraticien(unVisiteur.IdVisiteur);
+                Presentation.FAfficheFrais f = new Presentation.FAffichePraticien(listPraticiens);
+                f.ShowDialog();
+            }
+            catch (MesExceptions.MonException er)
+            {
+                MessageBox.Show(er.Message, "Lecture des praticiens", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
     }
     
