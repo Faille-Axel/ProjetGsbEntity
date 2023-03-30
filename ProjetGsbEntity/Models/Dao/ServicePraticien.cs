@@ -5,7 +5,7 @@ using System.Windows.Forms.Design;
 
 namespace ProjetGsbEntity.Models.Dao
 {
-    internal class ServicePraticien
+    public class ServicePraticien
     {
         private static ServicePraticien instance;
         private static Domain.AF_gsbccharpContext unService;
@@ -31,12 +31,7 @@ namespace ProjetGsbEntity.Models.Dao
             try
             {
 
-
-
-
-                var mesPraticiens = (List<Domain.Praticien>)(from p in unService.Praticien
-                                                           select p).ToList();
-
+                var mesPraticiens = (List<Domain.Praticien>)(from v in unService.Praticien select v).ToList();
 
                 return mesPraticiens;
             }
