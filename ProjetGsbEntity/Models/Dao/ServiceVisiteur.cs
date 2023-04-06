@@ -150,13 +150,8 @@ namespace ProjetGsbEntity.Models.Dao
 
                 try
                 {
-
-
-                           
-                
                var mesVisiteurs = (List<Domain.Visiteur>)(from v in unService.Visiteur            
                          select v).ToList();
-
 
                 return mesVisiteurs;
                 }
