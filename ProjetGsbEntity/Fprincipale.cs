@@ -228,8 +228,8 @@ namespace ProjetGsbEntity
         {
             try
             {
-                List<Models.Domain.Praticien> listPraticiens = Models.Dao.ServicePraticien.getInstance().ListedesPraticien(unVisiteur.IdVisiteur);
-                Presentation.FAfficheFrais f = new Presentation.FAffichePraticien(listPraticiens);
+                List<Models.Domain.Praticien> listPraticiens = Models.Dao.ServicePraticien.getInstance().GetListeDesPraticiens();
+                Presentation.FAffichePraticien f = new Presentation.FAffichePraticien(listPraticiens);
                 f.ShowDialog();
             }
             catch (MesExceptions.MonException er)
@@ -238,6 +238,6 @@ namespace ProjetGsbEntity
             }
         }
     }
-    }
+}
     
 
