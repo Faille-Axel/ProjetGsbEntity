@@ -5,6 +5,12 @@ namespace ProjetGsbEntity.Models.Domain
 {
     public partial class Praticien
     {
+
+        public Praticien()
+        {
+            
+        }
+
         public int IdPraticien { get; set; }
         public int? IdTypePraticien { get; set; }
         public string NomPraticien { get; set; }
