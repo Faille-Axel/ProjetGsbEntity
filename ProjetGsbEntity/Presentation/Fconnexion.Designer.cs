@@ -40,7 +40,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Matura MT Script Capitals", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Matura MT Script Capitals", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(288, 96);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
@@ -51,7 +51,7 @@
             // tbLogin
             // 
             this.tbLogin.Location = new System.Drawing.Point(356, 318);
-            this.tbLogin.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbLogin.Margin = new System.Windows.Forms.Padding(6);
             this.tbLogin.Name = "tbLogin";
             this.tbLogin.Size = new System.Drawing.Size(180, 29);
             this.tbLogin.TabIndex = 1;
@@ -79,7 +79,7 @@
             // tbMotPasse
             // 
             this.tbMotPasse.Location = new System.Drawing.Point(356, 447);
-            this.tbMotPasse.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbMotPasse.Margin = new System.Windows.Forms.Padding(6);
             this.tbMotPasse.Name = "tbMotPasse";
             this.tbMotPasse.PasswordChar = '*';
             this.tbMotPasse.Size = new System.Drawing.Size(180, 29);
@@ -89,7 +89,7 @@
             // 
             this.btValider.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btValider.Location = new System.Drawing.Point(488, 562);
-            this.btValider.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btValider.Margin = new System.Windows.Forms.Padding(6);
             this.btValider.Name = "btValider";
             this.btValider.Size = new System.Drawing.Size(138, 42);
             this.btValider.TabIndex = 5;
@@ -120,10 +120,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tbLogin);
             this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Fconnexion";
             this.Text = "Fconnexion";
+            this.Validated += new System.EventHandler(this.btValider_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
 

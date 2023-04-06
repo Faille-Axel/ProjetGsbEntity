@@ -59,7 +59,7 @@
             // dgvFrais
             // 
             this.dgvFrais.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFrais.Location = new System.Drawing.Point(307, 197);
+            this.dgvFrais.Location = new System.Drawing.Point(295, 149);
             this.dgvFrais.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dgvFrais.Name = "dgvFrais";
             this.dgvFrais.Size = new System.Drawing.Size(941, 226);
