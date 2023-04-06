@@ -68,11 +68,13 @@ namespace ProjetGsbEntity
                             if (Utilitaires.MonMotPassHash.VerifyPassword(salt, mdp, tempo) == true)
 
                             {
-                                lb_etat.Text = "Etat connecté";
+                                // activation des composants qui deviennent accessible et modification du libelle d etat
+                                lb_etat.Text                         = "Etat connecté";
                                 déconnexionToolStripMenuItem.Enabled = true;
-                                interrogerToolStripMenuItem.Enabled = true;
-                                FraisToolStripMenuItem.Enabled = true;
-                                connexionToolStripMenuItem.Enabled = false;
+                                interrogerToolStripMenuItem.Enabled  = true;
+                                FraisToolStripMenuItem.Enabled       = true;
+                                connexionToolStripMenuItem.Enabled   = false;
+                                praticienToolStripMenuItem.Enabled   = true;
                                                          }
                             else
                                 MessageBox.Show("Erreur", "Erreur lors du contrôle  du mot de passe pour : " + Credential[0]);
