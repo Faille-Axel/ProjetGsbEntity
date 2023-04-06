@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Windows.Forms.Design;
 
@@ -24,25 +25,30 @@ namespace ProjetGsbEntity.Models.Dao
         private ServicePraticien()
         { }
 
-
+        /// <summary>
+        /// Lister les praticiens
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="MesExceptions.MonException"></exception>
         public List<Domain.Praticien> GetListeDesPraticiens()
         {
             MesExceptions.sErreurs er = new MesExceptions.sErreurs("Erreur sur lecture des Praticiens.", "LectureDesPraticiens");
             try
             {
 
-                var mesPraticiens = (List<Domain.Praticien>)(from v in unService.Praticien select v).ToList();
+                var mesPraticiens = (List<Domain.Praticien>)(from p in unService.Praticien 
+                    select p).ToList();
 
                 return mesPraticiens;
             }
             catch (InvalidOperationException e)
             {
-                throw new MesExceptions.MonException(e.Message, "Liste des utilisateurs", "GetListeVisiteur");
+                throw new MesExceptions.MonException(e.Message, "Liste des utilisateurs", "GetListePraticien");
             }
 
             catch (Exception e)
             {
-                throw new MesExceptions.MonException(e.Message, "Liste des utilisateurs", "GetListeVisiteur");
+                throw new MesExceptions.MonException(e.Message, "Liste des utilisateurs", "GetListePraticien");
             }
 
 
