@@ -32,6 +32,9 @@ namespace ProjetGsbEntity
             interrogerToolStripMenuItem.Enabled = false;
             FraisToolStripMenuItem.Enabled = false;
             connexionToolStripMenuItem.Enabled = true;
+            praticienToolStripMenuItem.Enabled = false;
+            lb_etat.Text = "non connecté";
+
         }
         /// <summary>
         /// Connexion d'un visiteur
@@ -108,13 +111,6 @@ namespace ProjetGsbEntity
         private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void déconnexionToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            unVisiteur = null;
-            Init_Etat();
-
         }
       
         /// <summary>
@@ -238,6 +234,12 @@ namespace ProjetGsbEntity
             {
                 MessageBox.Show(er.Message, "Lecture des praticiens", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void déconnexionToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            unVisiteur = null;
+            Init_Etat();
         }
     }
 }

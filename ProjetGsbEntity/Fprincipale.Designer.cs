@@ -39,11 +39,11 @@
             this.FraisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajouterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modifierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.outilsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.miseÀJourMotPasseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.praticienToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajouterToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.modifierToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.outilsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miseÀJourMotPasseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lb_etat = new System.Windows.Forms.Label();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.menuStrip1.SuspendLayout();
@@ -77,20 +77,21 @@
             // connexionToolStripMenuItem
             // 
             this.connexionToolStripMenuItem.Name = "connexionToolStripMenuItem";
-            this.connexionToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.connexionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.connexionToolStripMenuItem.Text = "Connexion";
             this.connexionToolStripMenuItem.Click += new System.EventHandler(this.connexionToolStripMenuItem_Click);
             // 
             // déconnexionToolStripMenuItem
             // 
             this.déconnexionToolStripMenuItem.Name = "déconnexionToolStripMenuItem";
-            this.déconnexionToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.déconnexionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.déconnexionToolStripMenuItem.Text = "Déconnexion";
+            this.déconnexionToolStripMenuItem.Click += new System.EventHandler(this.déconnexionToolStripMenuItem_Click_1);
             // 
             // quitterToolStripMenuItem
             // 
             this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
-            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.quitterToolStripMenuItem.Text = "Quitter";
             this.quitterToolStripMenuItem.Click += new System.EventHandler(this.quitterToolStripMenuItem_Click_1);
             // 
@@ -130,30 +131,15 @@
             // ajouterToolStripMenuItem
             // 
             this.ajouterToolStripMenuItem.Name = "ajouterToolStripMenuItem";
-            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.ajouterToolStripMenuItem.Text = "Ajouter";
             this.ajouterToolStripMenuItem.Click += new System.EventHandler(this.ajouterToolStripMenuItem_Click_1);
             // 
             // modifierToolStripMenuItem
             // 
             this.modifierToolStripMenuItem.Name = "modifierToolStripMenuItem";
-            this.modifierToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.modifierToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.modifierToolStripMenuItem.Text = "Modifier";
-            // 
-            // outilsToolStripMenuItem
-            // 
-            this.outilsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.miseÀJourMotPasseToolStripMenuItem});
-            this.outilsToolStripMenuItem.Name = "outilsToolStripMenuItem";
-            this.outilsToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
-            this.outilsToolStripMenuItem.Text = "Outils";
-            // 
-            // miseÀJourMotPasseToolStripMenuItem
-            // 
-            this.miseÀJourMotPasseToolStripMenuItem.Name = "miseÀJourMotPasseToolStripMenuItem";
-            this.miseÀJourMotPasseToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-            this.miseÀJourMotPasseToolStripMenuItem.Text = "Mise à jour Mot Passe";
-            this.miseÀJourMotPasseToolStripMenuItem.Click += new System.EventHandler(this.miseÀJourMotPasseToolStripMenuItem_Click);
             // 
             // praticienToolStripMenuItem
             // 
@@ -176,6 +162,21 @@
             this.modifierToolStripMenuItem1.Name = "modifierToolStripMenuItem1";
             this.modifierToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.modifierToolStripMenuItem1.Text = "Modifier";
+            // 
+            // outilsToolStripMenuItem
+            // 
+            this.outilsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.miseÀJourMotPasseToolStripMenuItem});
+            this.outilsToolStripMenuItem.Name = "outilsToolStripMenuItem";
+            this.outilsToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.outilsToolStripMenuItem.Text = "Outils";
+            // 
+            // miseÀJourMotPasseToolStripMenuItem
+            // 
+            this.miseÀJourMotPasseToolStripMenuItem.Name = "miseÀJourMotPasseToolStripMenuItem";
+            this.miseÀJourMotPasseToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.miseÀJourMotPasseToolStripMenuItem.Text = "Mise à jour Mot Passe";
+            this.miseÀJourMotPasseToolStripMenuItem.Click += new System.EventHandler(this.miseÀJourMotPasseToolStripMenuItem_Click);
             // 
             // lb_etat
             // 
